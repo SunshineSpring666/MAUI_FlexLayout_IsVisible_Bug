@@ -1,0 +1,15 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MaApp.MainPage"
+             xmlns:zxing="clr-namespace:ZXing.Net.Maui.Controls;assembly=ZXing.Net.MAUI"
+             x:Name="this"
+             BindingContext="{x:Reference this}"
+             Title="MainPage">
+
+    <StackLayout>
+        <Button Text="ToggleVisibility" Clicked="ToggleVisibility"/>
+        <FlexLayout IsVisible="{Binding IsLayoutVisible}">
+            <Label Text="FlexLayout is visible"/>
+        </FlexLayout>
+    </StackLayout>
+</ContentPage>
